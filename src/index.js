@@ -1,3 +1,3 @@
-import { getNumber } from './js/app';
+import getNumber from './js/getNumber';
 
-getNumber();
+console.log(getNumber());
