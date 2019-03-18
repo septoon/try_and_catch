@@ -1,3 +1,3 @@
 import getNumber from './js/getNumber';
 
-console.log(getNumber());
+console.log(getNumber('10'));

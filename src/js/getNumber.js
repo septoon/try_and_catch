@@ -1,14 +1,8 @@
 const getNumber = (number) => {
-  number = prompt('your number');
   const result = parseInt(number, 10);
-  try {
-    if (Number.isNaN(result)) {
-      throw 'Error';
-    }
-  } catch (e) {
-    throw "It's not a number";
-  }
-  return result;
+  if (Number.isNaN(result) || result % 1 > 0 || result <= 0) {
+    throw new Error('Error');
+  } else { return result; }
 };
 
 export default getNumber;
